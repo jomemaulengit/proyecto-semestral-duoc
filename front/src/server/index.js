@@ -1,11 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 3000
 const router = express.Router();
 const path = require('path');
-const ejs = require('ejs');
 require('dotenv').config()
 const rootdir = process.env.DIRNAME
+process.env.PWD = process.cwd()
 
 // DOWNLOAD FILE
 // app.get('/',function(req,res) {
@@ -20,13 +19,15 @@ const rootdir = process.env.DIRNAME
 //   console.log(`Example app listening on port ${port}`)
 // })
 
-// router.get('/',function(req,res){
-//     res.sendFile(path.join(rootdir+'src/index.ejs'));
-//     //rootdir : It will resolve to your project folder.
-//   });
+app.use(express.static(process.env.PWD + '/public'));
+
+router.get('/', function (req, res) {
+  res.render(path.join(rootdir + 'src/index.ejs'));
+  //rootdir : It will resolve to your project folder.
+});
 
 app.set("view engine", "ejs");
-  
+
 //add the router
 app.use('/', router);
 app.listen(process.env.PORT || 3000);
