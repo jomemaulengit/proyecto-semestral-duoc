@@ -25,6 +25,10 @@ router.get('/', function (req, res) {
   res.render(path.join(rootdir + 'src/index.ejs'));
   //rootdir : It will resolve to your project folder.
 });
+router.get('/cart', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/cart.ejs'));
+  //rootdir : It will resolve to your project folder.
+});
 
 app.set("view engine", "ejs");
 
