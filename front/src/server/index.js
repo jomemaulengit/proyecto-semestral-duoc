@@ -23,7 +23,12 @@ app.use(express.static(process.env.PWD + '/public'));
 
 router.get('/', function (req, res) {
   res.render(path.join(rootdir + 'src/index.ejs'));
-  //rootdir : It will resolve to your project folder.
+});
+router.get('/register', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/register.ejs'));
+});
+router.get('/forgot', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/forgot.ejs'));
 });
 
 app.set("view engine", "ejs");
