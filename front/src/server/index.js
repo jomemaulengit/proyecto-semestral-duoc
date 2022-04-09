@@ -32,11 +32,15 @@ router.get('/forgot', function (req, res) {
 });
 router.get('/cart', function (req, res) {
   res.render(path.join(rootdir + 'src/pages/cart.ejs'));
-  //rootdir : It will resolve to your project folder.
 });
 router.get('/myorder', function (req, res) {
   res.render(path.join(rootdir + 'src/pages/orderTracking.ejs'));
-  //rootdir : It will resolve to your project folder.
+});
+router.get('/history', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/history.ejs'));
+});
+router.get('/details', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/details.ejs'));
 });
 
 app.set("view engine", "ejs");
