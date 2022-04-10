@@ -1,8 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+/* NAVBAR-------------------------------------------------------------------------- */
 
 body {
+  background-color: #eeeeee;
+  font-family: 'Open Sans', serif
+}
+
+.activeLink {
+  background-color: goldenrod;
+}
+
+.customSearch:focus {
+  width: 300px;
+}
+
+a.nav-link.active:hover {
+  background-color: goldenrod;
+  border-radius: 2px;
+}
+
+button.active:hover {
+  background-color: goldenrod;
+  border-radius: 2px;
+}
+
+.hero-image {
+  background-image: url("/img/banner.jpg");
+  background-color: #cccccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 40.29%;
+}
+
+.lol {
+  margin-left: 480px;
+  margin-right: 480px;
+}
+
+@media screen and (max-width: 1700px) {
+  .lol {
+    margin-left: 380px;
+    margin-right: 380px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .lol {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .lol {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .hero-image {
+    background-image: url("/img/banner (2).jpg");
+    padding-top: 99.49%;
+  }
+
+  .lol {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* DETAILS====================================================================================== */
+body {
   background-color: #eee;
-  font-family: "Poppins", sans-serif
 }
 
 .card {
@@ -15,11 +94,13 @@ body {
   width: 100%
 }
 
+
 ul {
   list-style: none outside none;
   padding-left: 0;
   margin-bottom: 0
 }
+
 
 li {
   display: block;
@@ -28,23 +109,21 @@ li {
   cursor: pointer
 }
 
-img {
-  display: block;
-  height: auto;
-  width: 100%
-}
 
 .stars i {
   color: #f6d151
 }
 
+
 .stars span {
   font-size: 13px
 }
 
+
 hr {
   color: #d4d4d4
 }
+
 
 .badge {
   padding: 5px !important;
@@ -54,6 +133,7 @@ hr {
 .badge i {
   font-size: 10px
 }
+
 
 .profile-image {
   width: 35px
@@ -89,48 +169,49 @@ hr {
   margin-top: 15px
 }
 
+
 .buttons .btn {
   height: 46px
 }
 
 .buttons .cart {
-  border-color: #ff7676;
-  color: #ff7676
+  border-color: gold;
+  color: gold;
 }
 
 .buttons .cart:hover {
-  background-color: #e86464 !important;
+  background-color: gold !important;
   color: #fff
 }
 
 .buttons .buy {
   color: #fff;
-  background-color: #ff7676;
-  border-color: #ff7676
+  background-color: goldenrod;
+  border-color: goldenrod;
 }
 
 .buttons .buy:focus,
 .buy:active {
   color: #fff;
-  background-color: #ff7676;
-  border-color: #ff7676;
+  background-color: gold;
+  border-color: gold;
   box-shadow: none
 }
 
 .buttons .buy:hover {
   color: #fff;
-  background-color: #e86464;
-  border-color: #e86464
+  background-color: gold;
+  border-color: gold;
 }
 
 .buttons .wishlist {
   background-color: #fff;
-  border-color: #ff7676
+  border-color: #ff7676;
 }
 
 .buttons .wishlist:hover {
-  background-color: #e86464;
-  border-color: #e86464;
+  background-color: #ff7676;
+  border-color: #ff7676;
   color: #fff
 }
 
@@ -172,6 +253,8 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px
 }
+
+/*
 
 label.radio {
   cursor: pointer
@@ -232,4 +315,4 @@ label.radio input:checked+span::before {
 
 .card-body {
   padding: 0.3rem 0.3rem 0.2rem
-}
+} */

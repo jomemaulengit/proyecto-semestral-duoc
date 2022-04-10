@@ -27,25 +27,13 @@
           <li class="nav-item">
             <!-- Button trigger modal -->
             <button type="button" class="btn active" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Mi cuenta
+              Iniciar sesion
             </button>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Categorias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="cart">Carrito</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="myorder">Mis compras</a>
-          </li>
-
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2 customSearch" type="search" placeholder="Buscar productos"
-            aria-label="Search">
-          <button class="btn btn-outline-success" type="submit"><i class="material-icons">search</i></button>
-        </form>
         <form action="register">
           <button class="btn btn-warning me-3 ms-3" type="submit">Registrarse</button>
         </form>
@@ -56,66 +44,127 @@
   <!-- HISTORY------------------------------------------------------------------------------- -->
   <div class="container d-flex justify-content-center mt-100">
     <!-- The Modal -->
-    <div class="card" id="modal1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Adidas Yeezy Boost 350 V2<br> Limited Edition</h4>
-          </div> <!-- Modal body -->
-          <div class="modal-body">
-            <div class="container">
-              <h6>Item Details</h6>
-              <div class="row">
-                <div class="col"> <img class="img-fluid" src="https://i.imgur.com/iItpzRh.jpg"> </div>
-                <div class="col-xs-6" style="padding-top: 2vh;">
-                  <ul type="none">
-                    <li>Size: 11</li>
-                    <li>Color: Desert Sage</li>
-                  </ul>
-                </div>
-              </div>
-              <h6>Order Details</h6>
-              <div class="row">
-                <div class="col-xs-6">
-                  <ul type="none">
-                    <li class="left">Order number:</li>
-                    <li class="left">Date:</li>
-                    <li class="left">Price:</li>
-                    <li class="left">Shipping:</li>
-                    <li class="left">Total Price:</li>
-                  </ul>
-                </div>
-                <div class="col-xs-6">
-                  <ul class="right" type="none">
-                    <li class="right">#BBRT-3456981</li>
-                    <li class="right">19-03-2020</li>
-                    <li class="right">$690</li>
-                    <li class="right">$30</li>
-                    <li class="right">$720</li>
-                  </ul>
-                </div>
-              </div>
-              <h6>Shipment</h6>
-              <div class="row" style="border-bottom: none">
-                <div class="col-xs-6">
-                  <ul type="none">
-                    <li class="left">Estimated arrival</li>
-                  </ul>
-                </div>
-                <div class="col-xs-6">
-                  <ul type="none">
-                    <li class="right">25-03-2020</li>
-                  </ul>
-                </div>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Flexi Flexi correa extra larga</h4>
+        </div> <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <h6>Detalles</h6>
+            <div class="row">
+              <div class="col"> <img class="img-fluid" src="img/correa1.jpg"> </div>
+              <div class="col-xs-6" style="padding-top: 2vh;">
+                <ul type="none">
+                  <li>Tamaño: 2 metros</li>
+                  <li>Color: Azul</li>
+                </ul>
               </div>
             </div>
-          </div> <!-- Modal footer -->
-          <div class="modal-footer">
-            <form action="myorder">
-              <button type="submit" class="btn">Track order</button>
-            </form>
+            <h6>Despacho</h6>
+            <div class="row" style="border-bottom: none">
+              <div class="col-xs-6">
+                <ul type="none">
+                  <li class="left">Llega aproximadamente</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul type="none">
+                  <li class="right">25-03-2020</li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div> <!-- Modal footer -->
+        <div class="modal-footer">
+          <form action="myorder">
+            <button type="submit" class="btn btn-warning">Seguir orden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Taste of the wild</h4>
+        </div> <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <h6>Detalles</h6>
+            <div class="row">
+              <div class="col"> <img class="img-fluid" src="img/alimentoGato1.jpg" style="width:280px"> </div>
+              <div class="col-xs-6" style="padding-top: 2vh;">
+                <ul type="none">
+                  <li>Alimento para gatos adultos</li>
+                  <li>sabor: Salmon</li>
+                </ul>
+              </div>
+            </div>
+            <h6>Despacho</h6>
+            <div class="row" style="border-bottom: none">
+              <div class="col-xs-6">
+                <ul type="none">
+                  <li class="left">Llega aproximadamente</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul type="none">
+                  <li class="right">25-03-2020</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Modal footer -->
+        <div class="modal-footer">
+          <form action="myorder">
+            <button type="submit" class="btn btn-warning">Seguir orden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Login</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="input-group form-group mb-3 ">
+              <div class="input-group-prepend">
+                <span class="input-group-text" style="background-color: gold;"><i
+                    class="material-icons">person</i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="username">
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" style="background-color: gold;"><i class="material-icons">key</i></span>
+              </div>
+              <input type="password" class="form-control" placeholder="username">
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-center links">
+            No tienes una cuenta aun? <a href="register"> Registrarse</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="forgot">Olvidaste tu contraseña?</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <form action="/">
+            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+          </form>
         </div>
       </div>
     </div>
