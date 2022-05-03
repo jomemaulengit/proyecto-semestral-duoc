@@ -84,18 +84,44 @@
   </div>
 
   <!-- PRODUCTS -->
-  <div class="d-flex flex-wrap-reverse text-center mt-5 mb-5 justify-content-center lol">
-    <a href="details" class="btn">
+  <div id="productList" class="d-flex flex-wrap-reverse text-center mt-5 mb-5 justify-content-center lol">
+
+    <!-- products -->
+    <script>
+      const pname = "Flexi"
+      const pdescription = "akdnadjlasd"
+      const pprice = "12.990"
+      const productCard = (pname, pdescription, pprice, productCard) => {
+        return (`<a href="details" class="btn">
+      <div class="card btn m-3" type="submit" style="width: 18rem;">
+        <img src="/img/correa1.jpg" class="card-img-top " alt="c1" width="100px" height="250px">
+        <div class="card-body">
+          <h5 class="card-title">${pname}</h5>
+          <p class="card-text">${pdescription}
+          </p>
+          <hr>
+          <p style="font-weight:900">$ ${pprice}</p>
+          <a href="#" class="btn btn-success">Agregar al carrito</a>
+        </div>
+      </div>
+    </a>`);
+      }
+
+      document.getElementById("productList").innerHTML = productCard
+    </script>
+    <!-- <a href="details" class="btn">
       <div class="card btn m-3" type="submit" style="width: 18rem;">
         <img src="/img/correa1.jpg" class="card-img-top " alt="c1" width="100px" height="250px">
         <div class="card-body">
           <h5 class="card-title">Flexi Flexi classic blue</h5>
           <p class="card-text">correa para perros extra larga retractil
           </p>
+          <hr>
+          <p style="font-weight:900">$ 12.990</p>
           <a href="#" class="btn btn-success">Agregar al carrito</a>
         </div>
       </div>
-    </a>
+    </a> -->
 
   </div>
 
