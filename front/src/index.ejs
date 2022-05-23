@@ -88,40 +88,31 @@
 
     <!-- products -->
     <script>
-      const pname = "Flexi"
-      const pdescription = "akdnadjlasd"
-      const pprice = "12.990"
-      const productCard = (pname, pdescription, pprice, productCard) => {
-        return (`<a href="details" class="btn">
-      <div class="card btn m-3" type="submit" style="width: 18rem;">
-        <img src="/img/correa1.jpg" class="card-img-top " alt="c1" width="100px" height="250px">
-        <div class="card-body">
-          <h5 class="card-title">${pname}</h5>
-          <p class="card-text">${pdescription}
-          </p>
-          <hr>
-          <p style="font-weight:900">$ ${pprice}</p>
-          <a href="#" class="btn btn-success">Agregar al carrito</a>
-        </div>
-      </div>
-    </a>`);
-      }
+      const hola = axios.get('http://localhost:8000/api/v1/petshop/test').then((res) => { res.body }).catch((err) => { console.log(err) })
+      console.log(hola);
+      //   console.log(lol);
+    //   import axios from 'axios';
+    //   const pname = "Flexi"
+    //   const pdescription = "akdnadjlasd"
+    //   const pprice = "12.990"
+    //   const productCard = (pname, pdescription, pprice, productCard) => {
+    //     return (`<a href="details" class="btn">
+    //   <div class="card btn m-3" type="submit" style="width: 18rem;">
+    //     <img src="/img/correa1.jpg" class="card-img-top " alt="c1" width="100px" height="250px">
+    //     <div class="card-body">
+    //       <h5 class="card-title">${pname}</h5>
+    //       <p class="card-text">${pdescription}
+    //       </p>
+    //       <hr>
+    //       <p style="font-weight:900">$ ${pprice}</p>
+    //       <a href="#" class="btn btn-success">Agregar al carrito</a>
+    //     </div>
+    //   </div>
+    // </a>`);
+    //   }
 
-      document.getElementById("productList").innerHTML = productCard
+    //   document.getElementById("productList").innerHTML = productCard
     </script>
-    <!-- <a href="details" class="btn">
-      <div class="card btn m-3" type="submit" style="width: 18rem;">
-        <img src="/img/correa1.jpg" class="card-img-top " alt="c1" width="100px" height="250px">
-        <div class="card-body">
-          <h5 class="card-title">Flexi Flexi classic blue</h5>
-          <p class="card-text">correa para perros extra larga retractil
-          </p>
-          <hr>
-          <p style="font-weight:900">$ 12.990</p>
-          <a href="#" class="btn btn-success">Agregar al carrito</a>
-        </div>
-      </div>
-    </a> -->
 
   </div>
 
@@ -190,5 +181,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
   integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="x.js"></script>
 
 </html>

@@ -5,6 +5,7 @@ const path = require('path');
 require('dotenv').config()
 const rootdir = process.env.DIRNAME
 process.env.PWD = process.cwd()
+const cors = require('cors')
 
 // DOWNLOAD FILE
 // app.get('/',function(req,res) {
@@ -18,7 +19,8 @@ process.env.PWD = process.cwd()
 // app.listen(port, () => {
 //   console.log(`Example app listening on port ${port}`)
 // })
-
+// MIDDLEWARES
+app.use(cors());
 app.use(express.static(process.env.PWD + '/public'));
 
 router.get('/', function (req, res) {
@@ -41,6 +43,9 @@ router.get('/history', function (req, res) {
 });
 router.get('/details', function (req, res) {
   res.render(path.join(rootdir + 'src/pages/details.ejs'));
+});
+router.get('/test', function (req, res) {
+  res.render(path.join(rootdir + 'src/pages/test.ejs'));
 });
 
 app.set("view engine", "ejs");
